@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title> IndianTourism</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: cornsilk;
+        }
+
+        .navbar-brand{
+            font-size: 25px;
+        }
+
+        .Btn {
+            margin-left: 10px;
+            font-size: 25px;
+        }
+
+        .w-100 {
+            height: 500px;
+        }
+
+        .col-lg-4 {
+
+            margin-top: 50px;
+
+        }
+
+
+        .row1 {
+            text-align: justify;
+        }
+
+        .card-img-top {
+            border-radius: 15px;
+            border: 4px solid black;
+        }
+
+        .py-3 {
+            background-color: rgb(202, 200, 198);
+        }
+        .py-3 p{
+            padding-top:15px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Indian Tourism
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contect Us</a>
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="Btn">
+                    <!-- <input type="button" name=" Login"> -->
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Button trigger modal -->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login at IndianTourism</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+
+
+    <!-- Sign UpModal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignUpModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="Confirm password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">your data will be stored in database
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="slide1.jpg" class="d-block w-100" alt="Loading Image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Indian Tourism</h3>
+                    <p>All over india, Tourism place is avalable here.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="slide222.jpg" class="d-block w-100" alt="Loading Image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Indian Tourism</h3>
+                    <p>All over india, Tourism place is avalable here.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="slide 3.jpg" class="d-block w-100" alt="Loading Image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Indian Tourism</h3>
+                    <p>All over india, Tourism place is avalable here.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="Indian Turism-prv-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container marketing">
+        <div class="row feaarurette d-flax justify-content-center align-content-center">
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4 order md 1">
+                    <div class="image1"> <img src="kedarkantha.jpeg" class="card-img-top" alt="Loading Image"
+                            width="200" height="270"></div>
+
+
+                    <div class="row1">
+                        <h2>Kedarkantha</h2>
+                        <p>Kedarkantha is one of the majestic peaks of the great Himalayan range. One of the most
+                            popular winter
+                            treks, Kedarkantha fascinates numerous hikers and trekkers from all over the country and is
+                            perfect for
+                            both beginners and experts.This 4 night 5 day trek is curated after keeping in mind the
+                            wishes of people
+                            who love the serenity as well as the adventure that nature. </p>
+                        <p><a class="btn btn-secondary" href="homeplace1.html">View
+                                details »</a></p>
+                    </div>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 order md 2">
+
+                    <div class="image1"><img src="statueofunity.jpg" class="card-img-top" alt="Loading Image"
+                            width="200" height="270">
+                    </div>
+
+
+                    <div class="row1">
+                        <h2>Statue of Unity</h2>
+                        <p>The Statue of Unity, against the backdrop of the dramatic Satpura and Vindhyachal hills in
+                            Kevadia,
+                            Gujarat. The 182-metre (600 feet aprox.) statue is dedicated to Sardar Vallabhbhai Patel,
+                            the architect of
+                            independent India. The colossal monument towers over River Narmada, a tribute to India ‘from
+                            the people of
+                            Gujarat’ to the leader who placed people’s welfare first.</p>
+                        <p><a class="btn btn-secondary" href="homeplace2.html">View details »</a></p>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4 order md 3">
+                    <div class="image1"> <img src="kedarnath.jpg" class="card-img-top" alt="Loading Image"
+                            width="200" height="270"></div>
+
+
+                    <div class="row1">
+                        <h2>Kedarnath</h2>
+                        <p>Kedarnath Temple is a Hindu temple dedicated to the Hindu God Shiva. The temple is located
+                            near the Mandakini river, in the state of Uttarakhand. Due to extreme weather
+                            conditions, the temple is open to the general public only between the months of April and
+                            November.
+                            temple is carried down to Ukhimath where the deity is worshiped for the next six months</p>
+                        <p><a class="btn btn-secondary" href="homeplace3.html">View details »</a></p>
+                    </div>
+
+                </div>
+
+                <div class="container marketing">
+                    <div class="row feaarurette d-flax justify-content-center align-content-center">
+                        <!-- Three columns of text below the carousel -->
+                        <div class="row">
+                            <div class="col-lg-4 order md 1">
+                                <div class="image1"> <img src="manali.jpg" class="card-img-top" alt="Loading Image"
+                                        width="200" height="270">
+                                </div>
+
+
+                                <div class="row1">
+                                    <h2>Manali</h2>
+                                    <p>Manali is a town in the Indian state of Himachal Pradesh. It is situated in the
+                                        northern end of the Kullu Valley, formed by the Beas River. The town is located
+                                        in the Kullu district, approximately 270 kilometres (170 mi) north of the state
+                                        capital of Shimla and 544 kilometres (338 mi) northeast of the national capital
+                                        of Delhi. </p>
+                                    <p><a class="btn btn-secondary" href="homeplace4.html">View
+                                            details »</a></p>
+                                </div>
+                            </div><!-- /.col-lg-4 -->
+                            <div class="col-lg-4 order md 2">
+
+                                <div class="image1"><img src="Tajmahal.jpeg" class="card-img-top"
+                                        alt="Loading Image" width="200" height="270">
+                                </div>
+
+
+                                <div class="row1">
+                                    <h2>Taj Mahal</h2>
+                                    <p>If there was just one symbol to represent all of India, it would be the Taj
+                                        Mahal. The monument inspires millions of tourists to make the trip to Agra every
+                                        year, waking up before dawn to see magnificent structure radiate at sunrise. But
+                                        Agra tops the list of the best places to visit in India for reasons that go
+                                        India's most famous</p>
+                                    <p><a class="btn btn-secondary" href="homeplace5.html">View details »</a></p>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-4 order md 3">
+                                <div class="image1"> <img src="kerala.jpeg" class="card-img-top" alt="Loading Image"
+                                        width="200" height="270">
+                                </div>
+
+
+                                <div class="row1">
+                                    <h2>Kerala</h2>
+                                    <p>Head south of Goa, and you'll trade beaches for tranquil backwaters in Kerala.
+                                        Nothing beats the experience of hopping aboard a traditional thatched-top
+                                        houseboat in Alleppey (also known as Alappuzha) and slowly floating through
+                                        palm-fringed lagoons and rivers, either as a day trip or overnight adventure.
+                                    </p>
+                                    <p><a class="btn btn-secondary" href="homeplace6.html">View details »</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-3 my-4">
+    <p class="text-center text-muted">© 2021 Company, IndianTourism</p>
+  </footer>
+</body>
+
+</html>
